@@ -1,7 +1,8 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
-int main()
+
+void solve()
 {
     int n;
     string s;
@@ -10,15 +11,25 @@ int main()
     if(s[0]=='b' && (n&1))
     {
         cout<<"NO"<<endl;
-        return 0;
+        return;
     }
     int i=(n&1)?1:0;
-    for(;i<n;i+=2)
+    for(;i+1<n;i+=2)
     {
         if (s[i] == s[i + 1] && s[i] != '?'){
             cout<<"NO"<<endl;
+            return;
         }
     }
     cout<<"YES"<<endl;
-    return 0;
+}
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        solve();
+    }
+
 }
