@@ -1,6 +1,6 @@
 import java.util.*;
 
-class code {
+public class code {
     public static void main(String arhi[]) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
