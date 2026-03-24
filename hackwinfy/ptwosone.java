@@ -1,5 +1,6 @@
 import java.util.*;
 
+// we could use Arrays.binary 
 public class ptwosone {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,6 +18,18 @@ public class ptwosone {
         }
         int l = 0, r = 0;
         for (int i = q - 1; i >= 0; i--) {
+            int curr_l = queries[i][0];
+            int curr_r = queries[i][1];
+            if (!(curr_l >= l && curr_r <= r)) {
+
+            } else {
+                l = queries[i][0];
+            }
+            if (queries[i][1] > r) {
+                r = queries[i][1];
+            }
+            int x = queries[i][2];
+            int y = queries[i][3];
 
         }
         int sum = 0;
