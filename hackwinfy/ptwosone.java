@@ -1,6 +1,7 @@
 import java.util.*;
 
-// we could use Arrays.binary 
+//incomplete
+// we could use Arrays.binarySearch blah blah
 public class ptwosone {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
