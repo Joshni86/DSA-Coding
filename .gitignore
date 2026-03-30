@@ -4,3 +4,5 @@
 *.class
 *.pdf
 *.png
+/interview
+*.txt
